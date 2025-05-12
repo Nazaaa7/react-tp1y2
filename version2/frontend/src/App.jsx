@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Validador de Usuario</h1>
+      <h1>Ingrese un nombre a validar</h1>
       <input
         type="text"
         placeholder="Ingresá tu nombre"
