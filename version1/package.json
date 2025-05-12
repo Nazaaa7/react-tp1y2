@@ -1,0 +1,24 @@
+{
+  "name": "react-tp1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+      "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazaaa7/react-tp1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nazaaa7/react-tp1/issues"
+  },
+  "homepage": "https://github.com/Nazaaa7/react-tp1#readme",
+  "description": "Instrucciones para ejecutar el proyecto",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "keywords": []
+}

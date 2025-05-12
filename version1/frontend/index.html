@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Saludo Personalizado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      text-align: center;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #mensaje {
+      margin-top: 20px;
+      font-size: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ingresa tu nombre</h1>
+  <input type="text" id="nombre" placeholder="Tu nombre">
+  <button onclick="enviarNombre()">Enviar</button>
+  <div id="mensaje"></div>
+
+  <script>
+    function enviarNombre() {
+      const nombre = document.getElementById('nombre').value;
+      fetch(`/saludo/${nombre}`)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('mensaje').textContent = data;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+  </script>
+</body>
+</html>
